@@ -52,8 +52,8 @@ sendEmail(name,email,subject,message);
 function sendEmail(name,email,subject,message){
 Email.send({
 	    SecureToken : "5f24c92d-4d95-4c1f-b5f5-c91ca7120ae0",
-	    To : 'peddojuanusha754@gmail.com',
-	    From :  'peddojuanusha754@gmail.com',
+	    To : 'sadhaksmart42@gmail.com',
+	    From :  'sadhaksmart42@gmail.com.com',
 	    Subject : `${subject}`,
 	    Body : `Name: ${name} <br/> Email: ${email} <br/> Subject: ${subject} <br/> Message: ${message}`,
 	}).then((message) => alert("mail sent successfully"));
