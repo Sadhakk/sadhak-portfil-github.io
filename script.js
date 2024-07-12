@@ -25,7 +25,7 @@ $(document).ready(function(){
 //typing animation script
 
 var typed = new Typed(".typing", {
-	strings: ["IT47 Student","Programmer","Designer","Tech learner"],
+	strings: ["Programmer","Web Developer","Tech learner"],
 	typeSpeed: 100,
 	backSpeed: 60,
 	loop: true
@@ -53,8 +53,8 @@ function sendEmail(name,email,subject,message){
 Email.send({
 	    SecureToken : "5f24c92d-4d95-4c1f-b5f5-c91ca7120ae0",
 	    To : 'sadhaksmart42@gmail.com',
-	    From :  'sadhaksmart42@gmail.com.com',
+	    From :  'sadhaksmart42@gmail.com',
 	    Subject : `${subject}`,
 	    Body : `Name: ${name} <br/> Email: ${email} <br/> Subject: ${subject} <br/> Message: ${message}`,
-	}).then((message) => alert("mail sent successfully"));
+	}).then((message) => alert(`mail sent successfully ${message}`));
 }
